@@ -1,0 +1,43 @@
+.carousel {
+  width: 100%;
+  height: auto;
+  position: relative;
+
+  &__btn {
+    cursor: pointer;
+    display: flex;
+    position: absolute;
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 46px;
+    height: 100%;
+    margin: 0 1.46rem;
+    @include sm {
+      width: 24px;
+    }
+
+    &--prev {
+      left: 0;
+      background-image: url(../../assets/arrowLeft-icon.svg);
+    }
+    &--next {
+      position: absolute;
+      right: 0;
+      background-image: url(../../assets/arrowRight-icon.svg);
+    }
+  }
+  &__index {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    margin-bottom: 1.56rem;
+    display: flex;
+    justify-content: center;
+    color: $color-secondary;
+    font-size: 18px;
+    @include sm {
+      display: none;
+    }
+  }
+}

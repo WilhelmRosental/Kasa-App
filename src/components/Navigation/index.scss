@@ -1,0 +1,22 @@
+.nav-container {
+  max-width: 100%;
+  display: flex;
+}
+
+.navMain {
+  display: flex;
+  align-items: center;
+  gap: 3.56rem;
+  @include sm {
+    gap: 1.62rem;
+  }
+
+  &__element {
+    display: flex;
+    color: $color-primary;
+
+    & .active {
+      text-decoration: underline;
+    }
+  }
+}

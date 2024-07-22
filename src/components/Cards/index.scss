@@ -1,0 +1,17 @@
+.cards-section {
+  background-color: $color-surface-container;
+  border-radius: $borderRaduis-lg;
+
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 60px;
+  padding: 50px;
+
+  @include sm {
+    background-color: initial;
+    border-radius: initial;
+    padding: 0;
+    gap: 20px;
+  }
+}

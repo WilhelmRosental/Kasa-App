@@ -1,0 +1,31 @@
+.main-errorPage {
+  display: flex;
+  flex-direction: column;
+  //   justify-content: center;
+  text-align: center;
+  min-height: 65vh;
+  height: 329px;
+  color: $color-primary;
+}
+
+.errorPage {
+  &__title {
+    // display: flex;
+    font-size: 288px;
+    font-weight: 700;
+    margin: auto;
+    @include md {
+      font-size: 150px;
+    }
+    @include sm {
+      font-size: 96px;
+    }
+  }
+  &__msg {
+    margin: auto;
+  }
+
+  &__link {
+    text-decoration: underline;
+  }
+}

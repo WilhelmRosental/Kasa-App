@@ -1,0 +1,46 @@
+.banner {
+  position: relative;
+  overflow: hidden;
+  height: 223px;
+  border-radius: $borderRaduis-lg;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-size: cover;
+  background-position: center;
+  padding: 16px;
+
+  @include sm {
+    height: 111px;
+    border-radius: $borderRaduis-md;
+  }
+
+  &__bgDefault {
+    background-color: #c4c4c4;
+  }
+  &__bg1 {
+    background-image: url(../../assets/banner-img1.jpg);
+  }
+  &__bg2 {
+    background-image: url(../../assets/banner-img2.jpg);
+  }
+
+  &__text {
+    position: relative;
+    color: $color-secondary;
+    font-size: 48px;
+    @include sm {
+      font-size: 24px;
+    }
+  }
+
+  &::before {
+    content: '';
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    background-color: rgba(#000000, 0.3);
+  }
+}

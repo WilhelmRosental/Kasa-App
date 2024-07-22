@@ -1,0 +1,15 @@
+.main-aboutus {
+  display: flex;
+  flex-direction: column;
+  gap: 2.37rem;
+}
+
+.dropdown-container {
+  display: flex;
+  flex-direction: column;
+  gap: 1.88rem;
+  padding: 0 100px;
+  @include sm {
+    padding: 0;
+  }
+}
