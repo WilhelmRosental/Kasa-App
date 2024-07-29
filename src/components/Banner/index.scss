@@ -18,9 +18,11 @@
   &__bgDefault {
     background-color: #c4c4c4;
   }
+
   &__bg1 {
     background-image: url(../../assets/banner-img1.jpg);
   }
+
   &__bg2 {
     background-image: url(../../assets/banner-img2.jpg);
   }
@@ -35,12 +37,12 @@
   }
 
   &::before {
-    content: '';
+    content: "";
     position: absolute;
-    top: 0px;
-    right: 0px;
-    bottom: 0px;
-    left: 0px;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
     background-color: rgba(#000000, 0.3);
   }
 }

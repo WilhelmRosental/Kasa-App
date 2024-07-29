@@ -5,7 +5,7 @@ import svgr from '@svgr/rollup'
 // https://vitejs.dev/config/
 export default defineConfig({
   plugins: [react(), svgr()],
-  base: '/projets/11-kasa/', //Indique la racine du fichier
+  base: '/',
   css: {
     preprocessorOptions: {
       scss: {
@@ -13,7 +13,4 @@ export default defineConfig({
       },
     },
   },
-  // build: {
-  //   assetsDir: 'projets/11-kasa',
-  // },
 })

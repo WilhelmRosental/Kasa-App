@@ -15,16 +15,16 @@
     align-items: center;
     cursor: pointer;
     width: 100%;
-    display: flex;
-    align-items: center;
     background-color: $color-primary;
     border-radius: 5px;
     color: $color-secondary;
     font-size: $fontSize-dropdown-lg;
     padding: 10px 20px 10px 15px;
+
     @include md {
       font-size: $fontSize-dropdown-md;
     }
+
     @include sm {
       padding: 10px;
       font-size: $fontSize-dropdown-sm;
@@ -35,25 +35,28 @@
       background-repeat: no-repeat;
       background-position: center;
       background-size: contain;
-
       width: 32px;
       height: 32px;
       display: flex;
       align-items: center;
-      transition: transform ease-in-out 0.3s;
+      transition: transform ease-in-out 0.15s;
+
       @include md {
         width: 24px;
         height: 24px;
       }
+
       @include sm {
         width: 18px;
         height: 18px;
       }
+
       &.open {
         transform-origin: center;
         transform: rotate(-180deg);
       }
     }
+
     &:focus-visible {
       border: 5px solid black;
     }
@@ -65,23 +68,27 @@
     max-height: 0;
     transform: translateY(-100px);
     color: $color-primary;
-    transition: opacity 0.5s ease-in-out, transform 0.8s ease-in-out,
-      max-height 0.8s ease-in-out;
-
+    transition:
+      opacity 0.25s ease-in-out,
+      transform 0.2s ease-in-out,
+      max-height 0.2s ease-in-out;
     font-size: $fontSize-dropdown-md;
+
     @include sm {
       font-size: 12px;
     }
-    & p {
+
+    p {
       margin: 20px;
     }
-    & li {
+
+    li {
       margin: 10px 20px;
     }
 
     &.open {
       transform: translateY(0);
-      max-height: 1000px; //% not work for transition
+      max-height: 1000px;
     }
   }
 }
