@@ -35,7 +35,7 @@ const routes: RouteObject[] = [
 ]
 
 const router = createBrowserRouter(routes, {
-  basename: '/',
+  basename: '/Kasa-App/',
 })
 
 ReactDOM.createRoot(document.getElementById('root') as HTMLElement).render(
